@@ -1,0 +1,312 @@
+19:15:49 info        [08:00] Dr. Silva está disponível.
+19:15:49 info        [08:00] Dra. Costa está disponível.
+19:15:49 info        [08:00] Dr. Souza está disponível.
+19:15:49 info        [08:00] Dra. Lima está disponível.
+19:15:49 info        [08:00] Dr. Pereira está disponível.
+19:15:49 info        [08:00] Plantonista está disponível.
+19:16:26 recusa      [15:00] Iara 1: não tem consulta agendada para hoje.
+19:16:26 chegada     [15:00] Nuno 2: consulta não agendada (prioritário). Vagas restantes na tarde: 3.
+19:16:26 atendimento [15:00] Plantonista chamou Nuno 2 (prioritário; chegou às 15:00). Prioritários restantes no bloco: 2.
+19:16:26 chegada     [15:00] João 3: consulta não agendada (prioritário). Vagas restantes na tarde: 2.
+19:16:27 chegada     [15:00] Lucas 4: consulta não agendada (comum). Vagas restantes na tarde: 1.
+19:16:27 recusa      [15:00] Paulo 5: consulta era às 08:00; horário já passou (não há tolerância de atraso).
+19:16:28 recusa      [15:00] Iara 6: consulta era às 08:00; horário já passou (não há tolerância de atraso).
+19:16:28 chegada     [15:00] Karen 7: consulta agendada com Dr. Pereira às 15:00. Aguarde ser chamado.
+19:16:28 chegada     [15:00] Carla 8: consulta não agendada (comum). Vagas restantes na tarde: 0.
+19:16:28 atendimento [15:00] Dr. Pereira chamou Karen 7 (consulta das 15:00).
+19:16:28 recusa      [15:00] Olga 9: não há mais atendimentos no turno da tarde.
+19:16:28 recusa      [15:00] Marta 10: não tem consulta agendada para hoje.
+19:16:29 info        [15:00] Plantonista está disponível.
+19:16:29 atendimento [15:00] Plantonista chamou João 3 (prioritário; chegou às 15:00). Prioritários restantes no bloco: 1.
+19:16:31 info        [16:00] Plantonista está disponível.
+19:16:31 atendimento [16:00] Plantonista chamou Lucas 4 (comum; chegou às 15:00). Prioritários restantes no bloco: 3.
+19:16:32 info        [16:00] Dr. Pereira está disponível.
+19:16:34 info        [17:00] Plantonista está disponível.
+19:16:34 atendimento [17:00] Plantonista chamou Carla 8 (comum; chegou às 15:00). Prioritários restantes no bloco: 3.
+19:16:37 info        [17:00] Plantonista está disponível.
+19:16:44 info        [08:00] Novo dia (2): vagas do plantonista reiniciadas
+19:17:22 chegada     [15:00] Pedro: consulta não agendada (prioritário). Vagas restantes na tarde: 3.
+19:17:22 atendimento [15:00] Plantonista chamou Pedro (prioritário; chegou às 14:00). Prioritários restantes no bloco: 2.
+19:17:24 info        [15:00] Plantonista está disponível.
+19:17:39 info        [08:00] Novo dia (3): vagas do plantonista reiniciadas
+19:17:47 chegada     [09:00] Iara 11: consulta não agendada (comum). Vagas restantes na manhã: 3.
+19:17:47 atendimento [09:00] Plantonista chamou Iara 11 (comum; chegou às 09:00). Prioritários restantes no bloco: 3.
+19:17:47 chegada     [09:00] Lucas 12: consulta agendada com Dra. Lima às 09:00. Aguarde ser chamado.
+19:17:47 atendimento [09:00] Dra. Lima chamou Lucas 12 (consulta das 09:00).
+19:17:48 chegada     [09:00] Marta 13: consulta não agendada (comum). Vagas restantes na manhã: 2.
+19:17:48 chegada     [09:00] Karen 14: consulta não agendada (comum). Vagas restantes na manhã: 1.
+19:17:48 chegada     [09:00] Diego 15: consulta não agendada (comum). Vagas restantes na manhã: 0.
+19:17:49 recusa      [09:00] Olga 16: não há mais atendimentos no turno da manhã.
+19:17:49 chegada     [09:00] Olga 17: consulta agendada com Dra. Costa às 11:00. Aguarde ser chamado.
+19:17:49 recusa      [09:00] Carla 18: não há mais atendimentos no turno da manhã.
+19:17:49 atendimento [09:00] Dra. Costa chamou Olga 17 (consulta das 11:00).
+19:17:49 recusa      [10:00] Hugo 19: não tem consulta agendada para hoje.
+19:17:49 recusa      [10:00] Carla 20: não há mais atendimentos no turno da manhã.
+19:17:50 info        [10:00] Plantonista está disponível.
+19:17:50 atendimento [10:00] Plantonista chamou Marta 13 (comum; chegou às 09:00). Prioritários restantes no bloco: 3.
+19:17:51 info        [10:00] Dra. Lima está disponível.
+19:17:53 info        [10:00] Dra. Costa está disponível.
+19:17:53 info        [10:00] Plantonista está disponível.
+19:17:53 atendimento [10:00] Plantonista chamou Karen 14 (comum; chegou às 09:00). Prioritários restantes no bloco: 3.
+19:17:55 info        [11:00] Plantonista está disponível.
+19:17:55 atendimento [11:00] Plantonista chamou Diego 15 (comum; chegou às 09:00). Prioritários restantes no bloco: 3.
+19:17:58 info        [11:00] Plantonista está disponível.
+19:18:21 recusa      [16:00] Simulation: consulta era às 08:00; horário já passou (não há tolerância de atraso).
+19:18:34 info        [08:00] Novo dia (4): vagas do plantonista reiniciadas
+19:18:36 chegada     [08:00] Simulation: consulta agendada com Dr. Souza às 08:00. Aguarde ser chamado.
+19:18:36 atendimento [08:00] Dr. Souza chamou Simulation (consulta das 08:00).
+19:18:39 info        [08:00] Dr. Souza está disponível.
+19:18:46 recusa      [10:00] Hugo 21: não tem consulta agendada para hoje.
+19:18:46 chegada     [10:00] Bruno 22: consulta agendada com Dr. Silva às 14:00. Aguarde ser chamado.
+19:18:46 atendimento [10:00] Dr. Silva chamou Bruno 22 (consulta das 14:00).
+19:18:47 chegada     [10:00] João 23: consulta agendada com Dr. Souza às 14:00. Aguarde ser chamado.
+19:18:47 atendimento [10:00] Dr. Souza chamou João 23 (consulta das 14:00).
+19:18:47 recusa      [10:00] Olga 24: não tem consulta agendada para hoje.
+19:18:47 recusa      [10:00] Elisa 25: consulta era às 08:00; horário já passou (não há tolerância de atraso).
+19:18:47 chegada     [10:00] Bruno 26: consulta não agendada (prioritário). Vagas restantes na manhã: 3.
+19:18:47 atendimento [10:00] Plantonista chamou Bruno 26 (prioritário; chegou às 10:00). Prioritários restantes no bloco: 2.
+19:18:47 chegada     [10:00] Hugo 27: consulta não agendada (comum). Vagas restantes na manhã: 2.
+19:18:48 chegada     [10:00] Marta 28: consulta agendada com Dr. Pereira às 17:00. Aguarde ser chamado.
+19:18:48 atendimento [10:00] Dr. Pereira chamou Marta 28 (consulta das 17:00).
+19:18:49 chegada     [10:00] João 29: consulta não agendada (comum). Vagas restantes na manhã: 1.
+19:18:49 chegada     [10:00] Paulo 30: consulta não agendada (comum). Vagas restantes na manhã: 0.
+19:18:49 info        [10:00] Dr. Souza está disponível.
+19:18:50 info        [11:00] Dr. Silva está disponível.
+19:18:50 info        [11:00] Plantonista está disponível.
+19:18:50 atendimento [11:00] Plantonista chamou Hugo 27 (comum; chegou às 10:00). Prioritários restantes no bloco: 3.
+19:18:52 info        [11:00] Dr. Pereira está disponível.
+19:18:52 info        [11:00] Plantonista está disponível.
+19:18:52 atendimento [11:00] Plantonista chamou João 29 (comum; chegou às 10:00). Prioritários restantes no bloco: 3.
+19:18:55 info        [12:00] Plantonista está disponível.
+19:19:00 atendimento [14:00] Plantonista chamou Paulo 30 (comum; chegou às 10:00). Prioritários restantes no bloco: 3.
+19:19:01 info        [14:00] Plantonista está disponível.
+19:19:03 chegada     [16:00] Marta 31: consulta agendada com Dra. Lima às 16:00. Aguarde ser chamado.
+19:19:03 atendimento [16:00] Dra. Lima chamou Marta 31 (consulta das 16:00).
+19:19:03 recusa      [17:00] Iara 32: a clínica não aceita mais pacientes após 17:00.
+19:19:03 recusa      [17:00] Olga 33: a clínica não aceita mais pacientes após 17:00.
+19:19:04 recusa      [17:00] Iara 34: a clínica não aceita mais pacientes após 17:00.
+19:19:04 recusa      [17:00] Diego 35: a clínica não aceita mais pacientes após 17:00.
+19:19:04 info        [17:00] Dra. Lima está disponível.
+19:19:04 recusa      [17:00] Elisa 36: a clínica não aceita mais pacientes após 17:00.
+19:19:04 recusa      [18:00] Hugo 37: a clínica está fechada neste horário.
+19:19:04 recusa      [18:00] Carla 38: a clínica está fechada neste horário.
+19:19:04 recusa      [18:00] Nuno 39: a clínica está fechada neste horário.
+19:19:05 recusa      [18:00] Fábio 40: a clínica está fechada neste horário.
+19:19:05 recusa      [18:00] Diego 41: a clínica está fechada neste horário.
+19:19:05 info        [08:00] Novo dia (5): vagas do plantonista reiniciadas
+19:19:05 chegada     [08:00] Fábio 42: consulta não agendada (prioritário). Vagas restantes na manhã: 3.
+19:19:05 atendimento [08:00] Plantonista chamou Fábio 42 (prioritário; chegou às 08:00). Prioritários restantes no bloco: 2.
+19:19:05 chegada     [08:00] Fábio 43: consulta agendada com Dra. Costa às 09:00. Aguarde ser chamado.
+19:19:05 chegada     [08:00] Iara 44: consulta não agendada (comum). Vagas restantes na manhã: 2.
+19:19:05 atendimento [08:00] Dra. Costa chamou Fábio 43 (consulta das 09:00).
+19:19:06 info        [08:00] Plantonista está disponível.
+19:19:06 atendimento [08:00] Plantonista chamou Iara 44 (comum; chegou às 08:00). Prioritários restantes no bloco: 3.
+19:19:06 chegada     [08:00] Bruno 45: consulta agendada com Dr. Silva às 14:00. Aguarde ser chamado.
+19:19:06 chegada     [08:00] Lucas 46: consulta não agendada (comum). Vagas restantes na manhã: 1.
+19:19:06 atendimento [08:00] Dr. Silva chamou Bruno 45 (consulta das 14:00).
+19:19:06 chegada     [08:00] Elisa 47: consulta agendada com Dra. Costa às 15:00. Aguarde ser chamado.
+19:19:06 info        [08:00] Dra. Costa está disponível.
+19:19:06 atendimento [08:00] Dra. Costa chamou Elisa 47 (consulta das 15:00).
+19:19:06 recusa      [09:00] Bruno 48: consulta era às 08:00; horário já passou (não há tolerância de atraso).
+19:19:07 info        [09:00] Plantonista está disponível.
+19:19:07 atendimento [09:00] Plantonista chamou Lucas 46 (comum; chegou às 08:00). Prioritários restantes no bloco: 3.
+19:19:07 info        [09:00] Dra. Costa está disponível.
+19:19:07 info        [09:00] Dr. Silva está disponível.
+19:19:07 chegada     [09:00] Bruno 49: consulta agendada com Dr. Souza às 17:00. Aguarde ser chamado.
+19:19:07 chegada     [09:00] Ana 50: consulta não agendada (prioritário). Vagas restantes na manhã: 0.
+19:19:07 recusa      [09:00] Hugo 51: não há mais atendimentos no turno da manhã.
+19:19:07 atendimento [09:00] Dr. Souza chamou Bruno 49 (consulta das 17:00).
+19:19:07 recusa      [09:00] Paulo 52: não há mais atendimentos no turno da manhã.
+19:19:07 recusa      [09:00] Elisa 53: não há mais atendimentos no turno da manhã.
+19:19:07 info        [10:00] Dr. Souza está disponível.
+19:19:07 info        [10:00] Plantonista está disponível.
+19:19:07 atendimento [10:00] Plantonista chamou Ana 50 (prioritário; chegou às 09:00). Prioritários restantes no bloco: 2.
+19:19:07 recusa      [10:00] Bruno 54: não tem consulta agendada para hoje.
+19:19:07 recusa      [10:00] Gabi 55: não há mais atendimentos no turno da manhã.
+19:19:07 recusa      [10:00] Nuno 56: não há mais atendimentos no turno da manhã.
+19:19:07 recusa      [10:00] Iara 57: não há mais atendimentos no turno da manhã.
+19:19:07 recusa      [10:00] Diego 58: não há mais atendimentos no turno da manhã.
+19:19:08 info        [10:00] Plantonista está disponível.
+19:19:08 chegada     [10:00] Iara 59: consulta agendada com Dr. Souza às 16:00. Aguarde ser chamado.
+19:19:08 atendimento [10:00] Dr. Souza chamou Iara 59 (consulta das 16:00).
+19:19:08 recusa      [10:00] Olga 60: não tem consulta agendada para hoje.
+19:19:08 recusa      [10:00] Iara 61: não há mais atendimentos no turno da manhã.
+19:19:08 chegada     [11:00] Paulo 62: consulta agendada com Dr. Silva às 16:00. Aguarde ser chamado.
+19:19:08 recusa      [11:00] Lucas 63: não há mais atendimentos no turno da manhã.
+19:19:08 atendimento [11:00] Dr. Silva chamou Paulo 62 (consulta das 16:00).
+19:19:08 info        [11:00] Dr. Souza está disponível.
+19:19:09 recusa      [11:00] Diego 64: não há mais atendimentos no turno da manhã.
+19:19:09 recusa      [11:00] Olga 65: não há mais atendimentos no turno da manhã.
+19:19:09 info        [11:00] Dr. Silva está disponível.
+19:19:09 recusa      [11:00] Karen 66: não há mais atendimentos no turno da manhã.
+19:19:09 recusa      [11:00] Nuno 67: não tem consulta agendada para hoje.
+19:19:09 chegada     [12:00] Diego 68: consulta agendada com Dr. Souza às 14:00. Aguarde ser chamado.
+19:19:09 recusa      [12:00] Fábio 69: a clínica está fechada neste horário.
+19:19:09 recusa      [12:00] Karen 70: a clínica está fechada neste horário.
+19:19:11 atendimento [14:00] Dr. Souza chamou Diego 68 (consulta das 14:00).
+19:19:12 info        [14:00] Dr. Souza está disponível.
+19:19:14 chegada     [16:00] Marta 71: consulta não agendada (comum). Vagas restantes na tarde: 3.
+19:19:14 atendimento [16:00] Plantonista chamou Marta 71 (comum; chegou às 16:00). Prioritários restantes no bloco: 3.
+19:19:14 info        [16:00] Plantonista está disponível.
+19:19:14 recusa      [17:00] Marta 72: a clínica não aceita mais pacientes após 17:00.
+19:19:15 recusa      [17:00] João 73: a clínica não aceita mais pacientes após 17:00.
+19:19:15 recusa      [18:00] Nuno 74: a clínica está fechada neste horário.
+19:19:15 recusa      [18:00] Elisa 75: a clínica está fechada neste horário.
+19:19:16 recusa      [18:00] Diego 76: a clínica está fechada neste horário.
+19:19:16 info        [08:00] Novo dia (6): vagas do plantonista reiniciadas
+19:19:16 recusa      [08:00] Olga 77: não tem consulta agendada para hoje.
+19:19:16 chegada     [08:00] Iara 78: consulta agendada com Dra. Costa às 09:00. Aguarde ser chamado.
+19:19:16 atendimento [08:00] Dra. Costa chamou Iara 78 (consulta das 09:00).
+19:19:17 chegada     [08:00] Hugo 79: consulta agendada com Dr. Souza às 15:00. Aguarde ser chamado.
+19:19:17 chegada     [08:00] Diego 80: consulta não agendada (comum). Vagas restantes na manhã: 3.
+19:19:17 atendimento [08:00] Plantonista chamou Diego 80 (comum; chegou às 08:00). Prioritários restantes no bloco: 3.
+19:19:17 atendimento [08:00] Dr. Souza chamou Hugo 79 (consulta das 15:00).
+19:19:17 chegada     [08:00] Elisa 81: consulta não agendada (prioritário). Vagas restantes na manhã: 2.
+19:19:17 chegada     [08:00] Hugo 82: consulta não agendada (prioritário). Vagas restantes na manhã: 1.
+19:19:17 chegada     [08:00] Elisa 83: consulta agendada com Dra. Lima às 08:00. Aguarde ser chamado.
+19:19:17 chegada     [08:00] Iara 84: consulta não agendada (comum). Vagas restantes na manhã: 0.
+19:19:17 atendimento [08:00] Dra. Lima chamou Elisa 83 (consulta das 08:00).
+19:19:17 recusa      [08:00] Elisa 85: não há mais atendimentos no turno da manhã.
+19:19:17 info        [09:00] Plantonista está disponível.
+19:19:17 atendimento [09:00] Plantonista chamou Elisa 81 (prioritário; chegou às 08:00). Prioritários restantes no bloco: 2.
+19:19:17 info        [09:00] Dra. Costa está disponível.
+19:19:17 chegada     [09:00] João 86: consulta agendada com Dr. Souza às 11:00. Aguarde ser chamado.
+19:19:17 info        [09:00] Dr. Souza está disponível.
+19:19:17 atendimento [09:00] Dr. Souza chamou João 86 (consulta das 11:00).
+19:19:17 info        [09:00] Dra. Lima está disponível.
+19:19:17 chegada     [09:00] Carla 87: consulta agendada com Dr. Souza às 10:00. Aguarde ser chamado.
+19:19:18 chegada     [09:00] Elisa 88: consulta agendada com Dr. Pereira às 11:00. Aguarde ser chamado.
+19:19:18 atendimento [09:00] Dr. Pereira chamou Elisa 88 (consulta das 11:00).
+19:19:18 recusa      [09:00] Hugo 89: não há mais atendimentos no turno da manhã.
+19:19:18 info        [09:00] Plantonista está disponível.
+19:19:18 atendimento [09:00] Plantonista chamou Hugo 82 (prioritário; chegou às 08:00). Prioritários restantes no bloco: 1.
+19:19:18 info        [09:00] Dr. Souza está disponível.
+19:19:18 atendimento [09:00] Dr. Souza chamou Carla 87 (consulta das 10:00).
+19:19:18 info        [10:00] Dr. Pereira está disponível.
+19:19:18 info        [10:00] Dr. Souza está disponível.
+19:19:18 recusa      [10:00] João 90: não há mais atendimentos no turno da manhã.
+19:19:19 info        [10:00] Plantonista está disponível.
+19:19:19 atendimento [10:00] Plantonista chamou Iara 84 (comum; chegou às 08:00). Prioritários restantes no bloco: 3.
+19:19:19 info        [11:00] Plantonista está disponível.
+19:19:26 recusa      [17:00] Fábio 91: a clínica não aceita mais pacientes após 17:00.
+19:19:26 recusa      [17:00] Bruno 92: a clínica não aceita mais pacientes após 17:00.
+19:19:26 recusa      [17:00] Fábio 93: a clínica não aceita mais pacientes após 17:00.
+19:19:26 recusa      [18:00] Ana 94: a clínica está fechada neste horário.
+19:19:27 recusa      [18:00] Olga 95: a clínica está fechada neste horário.
+19:19:27 recusa      [18:00] Hugo 96: a clínica está fechada neste horário.
+19:19:27 info        [08:00] Novo dia (7): vagas do plantonista reiniciadas
+19:19:27 chegada     [08:00] Bruno 97: consulta não agendada (comum). Vagas restantes na manhã: 3.
+19:19:27 atendimento [08:00] Plantonista chamou Bruno 97 (comum; chegou às 08:00). Prioritários restantes no bloco: 3.
+19:19:27 chegada     [08:00] Paulo 98: consulta não agendada (comum). Vagas restantes na manhã: 2.
+19:19:28 info        [08:00] Plantonista está disponível.
+19:19:28 atendimento [08:00] Plantonista chamou Paulo 98 (comum; chegou às 08:00). Prioritários restantes no bloco: 3.
+19:19:28 chegada     [08:00] Gabi 99: consulta agendada com Dr. Pereira às 17:00. Aguarde ser chamado.
+19:19:28 atendimento [08:00] Dr. Pereira chamou Gabi 99 (consulta das 17:00).
+19:19:28 info        [09:00] Plantonista está disponível.
+19:19:28 recusa      [09:00] Gabi 100: não tem consulta agendada para hoje.
+19:19:29 chegada     [09:00] Ana 101: consulta agendada com Dr. Silva às 10:00. Aguarde ser chamado.
+19:19:29 atendimento [09:00] Dr. Silva chamou Ana 101 (consulta das 10:00).
+19:19:29 info        [09:00] Dr. Pereira está disponível.
+19:19:29 recusa      [09:00] Bruno 102: não tem consulta agendada para hoje.
+19:19:29 recusa      [09:00] Ana 103: não tem consulta agendada para hoje.
+19:19:29 chegada     [09:00] Diego 104: consulta não agendada (comum). Vagas restantes na manhã: 1.
+19:19:29 chegada     [09:00] Olga 105: consulta não agendada (comum). Vagas restantes na manhã: 0.
+19:19:29 recusa      [09:00] Elisa 106: não há mais atendimentos no turno da manhã.
+19:19:29 atendimento [09:00] Plantonista chamou Diego 104 (comum; chegou às 09:00). Prioritários restantes no bloco: 3.
+19:19:29 info        [09:00] Dr. Silva está disponível.
+19:19:29 recusa      [09:00] Olga 107: não há mais atendimentos no turno da manhã.
+19:19:29 recusa      [10:00] Carla 108: não tem consulta agendada para hoje.
+19:19:29 recusa      [10:00] Lucas 109: não tem consulta agendada para hoje.
+19:19:30 info        [10:00] Plantonista está disponível.
+19:19:30 atendimento [10:00] Plantonista chamou Olga 105 (comum; chegou às 09:00). Prioritários restantes no bloco: 3.
+19:19:30 recusa      [10:00] Olga 110: não tem consulta agendada para hoje.
+19:19:30 recusa      [10:00] Nuno 111: não tem consulta agendada para hoje.
+19:19:30 recusa      [10:00] João 112: não há mais atendimentos no turno da manhã.
+19:19:30 info        [10:00] Plantonista está disponível.
+19:19:30 chegada     [11:00] Ana 113: consulta agendada com Dra. Costa às 16:00. Aguarde ser chamado.
+19:19:30 atendimento [11:00] Dra. Costa chamou Ana 113 (consulta das 16:00).
+19:19:30 chegada     [11:00] Nuno 114: consulta agendada com Dra. Lima às 17:00. Aguarde ser chamado.
+19:19:30 atendimento [11:00] Dra. Lima chamou Nuno 114 (consulta das 17:00).
+19:19:30 recusa      [11:00] Ana 115: consulta era às 10:00; horário já passou (não há tolerância de atraso).
+19:19:31 info        [11:00] Dra. Costa está disponível.
+19:19:31 recusa      [11:00] Iara 116: não tem consulta agendada para hoje.
+19:19:31 info        [11:00] Dra. Lima está disponível.
+19:19:31 recusa      [11:00] Carla 117: não tem consulta agendada para hoje.
+19:19:31 recusa      [12:00] Ana 118: não tem consulta agendada para hoje.
+19:19:31 recusa      [12:00] Bruno 119: a clínica está fechada neste horário.
+19:19:31 recusa      [12:00] Hugo 120: a clínica está fechada neste horário.
+19:19:32 recusa      [12:00] Bruno 121: a clínica está fechada neste horário.
+19:19:32 recusa      [12:00] Bruno 122: a clínica está fechada neste horário.
+19:19:32 recusa      [12:00] Lucas 123: a clínica está fechada neste horário.
+19:19:32 recusa      [13:00] Bruno 124: a clínica está fechada neste horário.
+19:19:32 recusa      [13:00] Lucas 125: a clínica está fechada neste horário.
+19:19:33 recusa      [13:00] Lucas 126: a clínica está fechada neste horário.
+19:19:33 recusa      [13:00] Iara 127: a clínica está fechada neste horário.
+19:19:34 recusa      [13:00] Hugo 128: a clínica está fechada neste horário.
+19:19:34 recusa      [13:00] Gabi 129: a clínica está fechada neste horário.
+19:19:34 recusa      [13:00] Bruno 130: a clínica está fechada neste horário.
+19:19:34 recusa      [13:00] Paulo 131: a clínica está fechada neste horário.
+19:19:34 recusa      [13:00] Ana 132: a clínica está fechada neste horário.
+19:19:35 recusa      [13:00] Ana 133: a clínica está fechada neste horário.
+19:19:35 recusa      [13:00] Lucas 134: a clínica está fechada neste horário.
+19:19:35 recusa      [13:00] Karen 135: a clínica está fechada neste horário.
+19:19:36 recusa      [13:00] Karen 136: a clínica está fechada neste horário.
+19:19:36 recusa      [13:00] Iara 137: a clínica está fechada neste horário.
+19:19:37 recusa      [13:00] Hugo 138: a clínica está fechada neste horário.
+19:19:37 recusa      [13:00] Elisa 139: a clínica está fechada neste horário.
+19:19:37 chegada     [14:00] Nuno 140: consulta não agendada (comum). Vagas restantes na tarde: 3.
+19:19:37 atendimento [14:00] Plantonista chamou Nuno 140 (comum; chegou às 14:00). Prioritários restantes no bloco: 3.
+19:19:38 chegada     [14:00] Nuno 141: consulta agendada com Dr. Pereira às 14:00. Aguarde ser chamado.
+19:19:38 atendimento [14:00] Dr. Pereira chamou Nuno 141 (consulta das 14:00).
+19:19:39 recusa      [14:00] Elisa 142: consulta era às 11:00; horário já passou (não há tolerância de atraso).
+19:19:39 chegada     [14:00] Lucas 143: consulta não agendada (comum). Vagas restantes na tarde: 2.
+19:19:39 recusa      [14:00] Ana 144: não tem consulta agendada para hoje.
+19:19:39 chegada     [14:00] Lucas 145: consulta não agendada (comum). Vagas restantes na tarde: 1.
+19:19:40 info        [14:00] Plantonista está disponível.
+19:19:40 atendimento [14:00] Plantonista chamou Lucas 143 (comum; chegou às 14:00). Prioritários restantes no bloco: 3.
+19:19:40 recusa      [14:00] Paulo 146: consulta era às 10:00; horário já passou (não há tolerância de atraso).
+19:19:40 chegada     [14:00] Karen 147: consulta não agendada (prioritário). Vagas restantes na tarde: 0.
+19:19:40 recusa      [14:00] Carla 148: não há mais atendimentos no turno da tarde.
+19:19:41 chegada     [14:00] Elisa 149: consulta agendada com Dr. Pereira às 14:00. Aguarde ser chamado.
+19:19:41 chegada     [14:00] Karen 150: consulta agendada com Dr. Silva às 17:00. Aguarde ser chamado.
+19:19:41 atendimento [14:00] Dr. Silva chamou Karen 150 (consulta das 17:00).
+19:19:41 recusa      [14:00] Carla 151: não tem consulta agendada para hoje.
+19:19:41 recusa      [14:00] Diego 152: não há mais atendimentos no turno da tarde.
+19:19:41 recusa      [14:00] Marta 153: não há mais atendimentos no turno da tarde.
+19:19:42 info        [14:00] Dr. Pereira está disponível.
+19:19:42 atendimento [14:00] Dr. Pereira chamou Elisa 149 (consulta das 14:00).
+19:19:42 chegada     [14:00] Elisa 154: consulta agendada com Dra. Lima às 16:00. Aguarde ser chamado.
+19:19:42 atendimento [14:00] Dra. Lima chamou Elisa 154 (consulta das 16:00).
+19:19:42 recusa      [14:00] Hugo 155: consulta era às 11:00; horário já passou (não há tolerância de atraso).
+19:19:42 chegada     [14:00] Diego 156: consulta agendada com Dr. Pereira às 17:00. Aguarde ser chamado.
+19:19:42 recusa      [14:00] Fábio 157: não há mais atendimentos no turno da tarde.
+19:19:42 recusa      [15:00] Olga 158: consulta era às 08:00; horário já passou (não há tolerância de atraso).
+19:19:42 recusa      [15:00] Elisa 159: consulta era às 10:00; horário já passou (não há tolerância de atraso).
+19:19:42 recusa      [15:00] Lucas 160: não tem consulta agendada para hoje.
+19:19:42 recusa      [15:00] Marta 161: não há mais atendimentos no turno da tarde.
+19:19:43 recusa      [15:00] Karen 162: não há mais atendimentos no turno da tarde.
+19:19:43 chegada     [15:00] Hugo 163: consulta agendada com Dr. Souza às 16:00. Aguarde ser chamado.
+19:19:43 atendimento [15:00] Dr. Souza chamou Hugo 163 (consulta das 16:00).
+19:19:43 chegada     [15:00] Diego 164: consulta agendada com Dr. Souza às 15:00. Aguarde ser chamado.
+19:19:43 recusa      [15:00] Elisa 165: não tem consulta agendada para hoje.
+19:19:44 info        [15:00] Plantonista está disponível.
+19:19:44 atendimento [15:00] Plantonista chamou Karen 147 (prioritário; chegou às 14:00). Prioritários restantes no bloco: 2.
+19:19:44 chegada     [15:00] Carla 166: consulta agendada com Dr. Souza às 15:00. Aguarde ser chamado.
+19:19:44 info        [15:00] Dr. Pereira está disponível.
+19:19:44 atendimento [15:00] Dr. Pereira chamou Diego 156 (consulta das 17:00).
+19:19:44 info        [15:00] Dra. Lima está disponível.
+19:19:44 recusa      [15:00] Gabi 167: consulta era às 08:00; horário já passou (não há tolerância de atraso).
+19:19:44 recusa      [15:00] Gabi 168: não há mais atendimentos no turno da tarde.
+19:19:45 info        [15:00] Dr. Silva está disponível.
+19:19:45 chegada     [15:00] Fábio 169: consulta agendada com Dra. Lima às 16:00. Aguarde ser chamado.
+19:19:45 atendimento [15:00] Dra. Lima chamou Fábio 169 (consulta das 16:00).
+19:19:45 recusa      [15:00] Karen 170: não há mais atendimentos no turno da tarde.
+19:19:46 info        [15:00] Plantonista está disponível.
+19:19:46 atendimento [15:00] Plantonista chamou Lucas 145 (comum; chegou às 14:00). Prioritários restantes no bloco: 3.
+19:19:46 info        [15:00] Dr. Souza está disponível.
+19:19:46 atendimento [15:00] Dr. Souza chamou Diego 164 (consulta das 15:00).
+19:19:47 info        [15:00] Dr. Pereira está disponível.
+19:19:48 info        [16:00] Dra. Lima está disponível.
+19:19:48 info        [16:00] Plantonista está disponível.
+19:19:49 info        [16:00] Dr. Souza está disponível.
+19:19:49 atendimento [16:00] Dr. Souza chamou Carla 166 (consulta das 15:00).
