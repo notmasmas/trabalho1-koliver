@@ -20,6 +20,8 @@ class Sistema:
                  semente=None, latencia=config.LATENCIA_MOCK):
         self.n = n
         self.contador = ContadorTempo(intervalo)
+
+        # HELENA: guarda tudo que as threads compartilham
         self.estado = EstadoTerminal(self.contador, config.MEDICOS)
 
         # provisório até a entrega 2
@@ -34,7 +36,6 @@ class Sistema:
         self.ctl_naoagendados = ControleNaoAgendados(
             self.estado, self.canal_plantonista, n)
 
-        # Front Ends simulados (Entrega 1)
         self.simulados = [
             FrontEndSimulado(m, (lambda m=m: self.ctl_agendados.ok_medico(m)),
                              self.canais_medicos[m], self.contador)
@@ -61,7 +62,7 @@ class Sistema:
 
 
 def ouvinte_arquivo(estado, caminho):
-    """Grava todos os eventos em um arquivo de log (evidência para o relatório)."""
+    # HELENA: pros logs
     os.makedirs(os.path.dirname(caminho) or ".", exist_ok=True)
     arq = open(caminho, "a", encoding="utf-8")
     mtx = threading.Lock()                    # várias threads emitem eventos

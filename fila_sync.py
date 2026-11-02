@@ -3,7 +3,7 @@ import threading
 from collections import deque
 
 
-# HELENA: essa fila FIFO é usada pra fila prioritária e fila comum (sem agendamento)
+# HELENA: essa fila FIFO é usada pra fila prioritária e fila comum (sem agendamento) e no front-end também
 class FilaFIFO:
 
     def __init__(self, nome="fila"):

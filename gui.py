@@ -1,19 +1,3 @@
-"""
-gui.py - Interface gráfica (tkinter) do Terminal.
-
-REGRAS DE OURO para a GUI não atrapalhar a sincronização:
-  1. Tkinter NÃO é thread-safe: só a thread principal mexe em widgets.
-  2. As threads de lógica nunca tocam a GUI. Elas apenas
-       - emitem Eventos (EstadoTerminal.emitir), que um ouvinte joga numa
-         FilaFIFO nossa (a mesma do passo 1, não queue.Queue);
-       - a Thread de Chegada, quando precisa perguntar "comum ou
-         prioritário?", posta uma pergunta numa FilaFIFO e dorme num Event.
-  3. A GUI faz polling a cada 150 ms (root.after): lê SNAPSHOTS das
-     estruturas (cópias feitas sob o mutex de cada uma) e só desenha.
-     Ela nunca segura um lock durante o desenho e nunca bloqueia.
-  4. Botões só chamam métodos não bloqueantes (solicitar() = um put()).
-"""
-
 import threading
 import time
 import tkinter as tk
@@ -25,12 +9,11 @@ from contador import FIM_DO_DIA, aceita_chegada, horario_str, turno_de
 from fila_sync import FilaFIFO
 from simulados import GeradorChegadas
 
-ATUALIZACAO_MS = 150
+ATUALIZACAO_MS = 150            # HELENA: de quanto em quanto tempo a GUI vai atualizar com snapshots dos dados
 MAX_LINHAS_LOG = 800
 
 
 class _Pergunta:
-    """Pergunta feita pela thread de chegada, respondida na thread da GUI."""
 
     def __init__(self, nome):
         self.nome = nome
@@ -56,9 +39,6 @@ class JanelaTerminal:
         root.protocol("WM_DELETE_WINDOW", self._fechar)
         self._atualizar()
 
-    # ==================================================================
-    # Construção da janela
-    # ==================================================================
     def _construir(self):
         r = self.root
         r.title("Terminal da Clínica - INE5611")
@@ -161,9 +141,7 @@ class JanelaTerminal:
                          ("atendimento", "#0b4fb3"), ("info", "#666666")):
             self.log.tag_config(tag, foreground=cor)
 
-    # ==================================================================
-    # Ações do usuário (sempre não bloqueantes)
-    # ==================================================================
+
     def _chegou(self, agendada):
         nome = self.var_nome.get().strip()
         if not nome:
@@ -189,9 +167,7 @@ class JanelaTerminal:
         self.sis.parar()
         self.root.destroy()
 
-    # ==================================================================
     # Pergunta "comum ou prioritário?" (thread de chegada <-> GUI)
-    # ==================================================================
     def _perguntar_prioridade(self, nome):
         """Chamada pela THREAD DE CHEGADA (não pela GUI). Posta a pergunta e
         dorme até a GUI responder; a GUI nunca é bloqueada."""
@@ -217,9 +193,8 @@ class JanelaTerminal:
             self._dialogo_aberto = False
             p.evento.set()                     # libera a thread de chegada
 
-    # ==================================================================
-    # Atualização periódica (só leitura de snapshots)
-    # ==================================================================
+
+    # HELENA: atualização periódica (leitura de snapshots)
     def _atualizar(self):
         try:
             self._desenhar_relogio()
