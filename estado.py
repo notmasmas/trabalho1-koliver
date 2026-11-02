@@ -1,7 +1,7 @@
 """
-estado.py - Estado compartilhado do Terminal (tudo que as threads dividem).
+estado.py - estado compartilhado do Terminal (tudo que as threads dividem).
 
-Recursos e quem os protege:
+recursos e quem protege:
   contador           -> Condition própria (contador.py)
   agendados[medico]  -> FilaOrdenada por médico (mutex + semáforo próprios)
   prioritarios       -> FilaFIFO (mutex + semáforo próprios)
@@ -9,11 +9,6 @@ Recursos e quem os protege:
   slots              -> SlotsPlantonista (mutex próprio)
   atendimentos       -> Atendimentos (mutex próprio)
   histórico/eventos  -> mutex próprio
-
-ORDEM DE TRAVAMENTO: cada estrutura tem seu PRÓPRIO mutex e nenhuma thread
-segura dois mutexes ao mesmo tempo (nunca há lock aninhado). Sem espera
-circular, não há deadlock. Para o relatório: "ordem de travamento: não
-aplicável por construção; locks nunca são aninhados".
 """
 
 import threading
@@ -29,67 +24,66 @@ from fila_sync import FilaFIFO, FilaOrdenada
 class Paciente:
     nome: str
     prioritario: bool = False
-    medico: Optional[str] = None      # só para agendados
-    horario: Optional[int] = None     # contador da consulta (só agendados)
-    chegada: int = 0                  # contador no momento em que chegou
+    medico: Optional[str] = None            # só para agendados
+    horario: Optional[int] = None           # contador da consulta (só agendados)
+    chegada: int = 0                        # contador no momento em que chegou
 
 
 class Evento(NamedTuple):
     instante: float
-    categoria: str     # 'chegada', 'recusa', 'info', 'atendimento', ...
+    categoria: str                          # 'chegada', 'recusa', 'info', 'atendimento', ...
     texto: str
 
 
 class SlotsPlantonista:
-    """Vagas do plantonista por turno (4 de manhã, 4 à tarde).
-
-    reservar() faz 'verifica + decrementa' como UMA operação atômica.
-    Se fossem dois passos separados (if livres>0: livres-=1), duas threads
-    poderiam ver livres=1 ao mesmo tempo e ambas reservar -> race condition.
-    """
 
     def __init__(self, por_turno=4):
-        self._por_turno = por_turno
+        self._por_turno = por_turno         # HELENA: quantidadade de vagas por turno
         self._mutex = threading.Lock()
         self._livres = {"manha": por_turno, "tarde": por_turno}
 
+
+    """
+    reservar() verifica e decrementa como uma operação atômica.
+    Se fossem dois passos separados (if livres>0: livres-=1), duas threads
+    poderiam ver livres=1 ao mesmo tempo e ambas reservar -> race condition.
+    """
     def reservar(self, turno):
-        with self._mutex:
+        with self._mutex:                   # usa o mutex (seção crítica) para leitura e escrita
             if self._livres.get(turno, 0) > 0:
                 self._livres[turno] -= 1
                 return True
             return False
 
     def restantes(self, turno):
-        with self._mutex:
+        with self._mutex:                   # usa o mutex (seção crítica) para leitura
             return self._livres.get(turno, 0)
 
     def snapshot(self):
-        with self._mutex:
+        with self._mutex:                   # usa o mutex (seção crítica) para leitura
             return dict(self._livres)
 
     def reiniciar(self):
-        with self._mutex:
+        with self._mutex:                   # usa o mutex (seção crítica) para escrita
             self._livres = {"manha": self._por_turno, "tarde": self._por_turno}
 
 
 class Atendimentos:
-    """Pacientes atualmente em atendimento, indexados pelo profissional."""
 
     def __init__(self):
         self._mutex = threading.Lock()
         self._dados = {}
 
     def iniciar(self, profissional, paciente):
-        with self._mutex:
+        with self._mutex:               # usa o mutex (seção crítica) para escrita
             self._dados[profissional] = paciente
 
     def terminar(self, profissional):
-        with self._mutex:
+        with self._mutex:               # usa o mutex (seção crítica) para escrita
             self._dados.pop(profissional, None)
 
     def snapshot(self):
-        with self._mutex:
+        with self._mutex:               # usa o mutex (seção crítica) para leitura
             return dict(self._dados)
 
 

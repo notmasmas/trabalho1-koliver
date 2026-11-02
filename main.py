@@ -1,16 +1,3 @@
-"""
-main.py - Programa Terminal (Entrega 1).
-
-Uso:
-    python main.py                       # abre a GUI (intervalo = config.py)
-    python main.py --intervalo 1         # modo acelerado: 1 s por "hora"
-    python main.py --chegadas 40         # já gera 40 pacientes aleatórios
-    python main.py --demo 30 --intervalo 0.5   # SEM janela: imprime o log por 30 s
-
-Todas as threads rodam neste único processo e compartilham o EstadoTerminal.
-A thread principal fica com a GUI (tkinter), que só LÊ snapshots.
-"""
-
 import argparse
 import os
 import threading
@@ -28,7 +15,6 @@ from simulados import FrontEndSimulado, GeradorChegadas
 
 
 class Sistema:
-    """Cria e liga todas as peças do Terminal."""
 
     def __init__(self, intervalo=config.INTERVALO_TICK, n=config.N_PROPORCAO,
                  semente=None, latencia=config.LATENCIA_MOCK):
@@ -36,12 +22,11 @@ class Sistema:
         self.contador = ContadorTempo(intervalo)
         self.estado = EstadoTerminal(self.contador, config.MEDICOS)
 
-        # Mock do servidor (Entrega 2: trocar por um cliente do servidor real)
+        # provisório até a entrega 2
         self.servidor = MockServidor(config.MEDICOS, latencia=latencia, semente=semente)
 
         self.chegada = ThreadChegada(self.estado, self.servidor)
 
-        # Canais "controle -> Front End" (Entrega 2: viram Pipes)
         self.canais_medicos = {m: FilaFIFO(f"fe:{m}") for m in config.MEDICOS}
         self.canal_plantonista = FilaFIFO("fe:plantonista")
 

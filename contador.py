@@ -67,7 +67,8 @@ class ContadorTempo(threading.Thread):
             self._parado = True
             self._cond.notify_all()
 
-    def ler(self):                                 # HELENA: lê o valor do contador com mutex (essa área é protegida)
+    def ler(self):   
+        with self._cond:                              # HELENA: lê o valor do contador com mutex (essa área é protegida)
             return self._valor
 
     def snapshot(self):
@@ -89,3 +90,4 @@ class ContadorTempo(threading.Thread):
 
     def registrar_callback(self, fn):
         self._callbacks.append(fn)
+
