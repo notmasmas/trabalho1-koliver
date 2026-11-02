@@ -91,8 +91,6 @@ class EstadoTerminal:
     def __init__(self, contador, medicos):
         self.contador = contador
         self.medicos = list(medicos)
-        # Multilista: lista principal = médicos; sub-lista = pacientes
-        # ordenados por horário da consulta.
         self.agendados = {
             m: FilaOrdenada(nome=f"agendados:{m}", chave=lambda p: p.horario)
             for m in self.medicos
