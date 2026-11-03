@@ -353,3 +353,57 @@
 20:19:03 info        [09:00] Dra. Costa está disponível.
 20:19:03 atendimento [09:00] Dra. Costa chamou Paulo 6 (consulta das 11:00).
 20:19:03 chegada     [09:00] Hugo 20: consulta agendada com Dr. Silva às 09:00. Aguarde ser chamado.
+23:42:59 info        [08:00] Dr. Silva está disponível.
+23:42:59 info        [08:00] Dra. Costa está disponível.
+23:42:59 info        [08:00] Dr. Souza está disponível.
+23:42:59 info        [08:00] Dra. Lima está disponível.
+23:42:59 info        [08:00] Dr. Pereira está disponível.
+23:42:59 info        [08:00] Plantonista está disponível.
+23:43:04 chegada     [09:00] Carla 1: consulta não agendada (prioritário). Vagas restantes na manhã: 3.
+23:43:04 atendimento [09:00] Plantonista chamou Carla 1 (prioritário; chegou às 09:00). Prioritários restantes no bloco: 2.
+23:43:04 chegada     [09:00] Gabi 2: consulta não agendada (comum). Vagas restantes na manhã: 2.
+23:43:05 chegada     [09:00] Fábio 3: consulta não agendada (comum). Vagas restantes na manhã: 1.
+23:43:05 recusa      [09:00] João 4: não tem consulta agendada para hoje.
+23:43:06 chegada     [09:00] Nuno 5: consulta não agendada (prioritário). Vagas restantes na manhã: 0.
+23:43:06 recusa      [09:00] Carla 6: consulta era às 08:00; horário já passou (não há tolerância de atraso).
+23:43:06 recusa      [09:00] Elisa 7: não tem consulta agendada para hoje.
+23:43:07 info        [09:00] Plantonista está disponível.
+23:43:07 atendimento [09:00] Plantonista chamou Nuno 5 (prioritário; chegou às 09:00). Prioritários restantes no bloco: 1.
+23:43:07 recusa      [09:00] Diego 8: não há mais atendimentos no turno da manhã.
+23:43:07 chegada     [09:00] Carla 9: consulta agendada com Dr. Souza às 11:00. Aguarde ser chamado.
+23:43:07 atendimento [09:00] Dr. Souza chamou Carla 9 (consulta das 11:00).
+23:43:08 recusa      [09:00] Lucas 10: não há mais atendimentos no turno da manhã.
+23:43:09 info        [10:00] Plantonista está disponível.
+23:43:09 atendimento [10:00] Plantonista chamou Gabi 2 (comum; chegou às 09:00). Prioritários restantes no bloco: 3.
+23:43:11 info        [10:00] Dr. Souza está disponível.
+23:43:12 info        [10:00] Plantonista está disponível.
+23:43:12 atendimento [10:00] Plantonista chamou Fábio 3 (comum; chegou às 09:00). Prioritários restantes no bloco: 3.
+23:43:16 info        [11:00] Plantonista está disponível.
+23:49:57 info        [08:00] Dr. Silva está disponível.
+23:49:57 info        [08:00] Dra. Costa está disponível.
+23:49:57 info        [08:00] Dr. Souza está disponível.
+23:49:57 info        [08:00] Dra. Lima está disponível.
+23:49:57 info        [08:00] Dr. Pereira está disponível.
+23:49:57 info        [08:00] Plantonista está disponível.
+23:50:04 chegada     [09:00] Carla 1: consulta não agendada (comum). Vagas restantes na manhã: 3.
+23:50:04 atendimento [09:00] Plantonista chamou Carla 1 (comum; chegou às 09:00). Prioritários restantes no bloco: 3.
+23:50:04 chegada     [09:00] Nuno 2: consulta não agendada (prioritário). Vagas restantes na manhã: 2.
+23:50:05 chegada     [09:00] Ana 3: consulta agendada com Dr. Silva às 17:00. Aguarde ser chamado.
+23:50:05 atendimento [09:00] Dr. Silva chamou Ana 3 (consulta das 17:00).
+23:50:05 chegada     [09:00] Bruno 4: consulta não agendada (comum). Vagas restantes na manhã: 1.
+23:50:05 chegada     [09:00] Nuno 5: consulta não agendada (prioritário). Vagas restantes na manhã: 0.
+23:50:06 chegada     [09:00] Olga 6: consulta agendada com Dr. Silva às 17:00. Aguarde ser chamado.
+23:50:06 recusa      [09:00] Gabi 7: não tem consulta agendada para hoje.
+23:50:06 recusa      [09:00] Fábio 8: consulta era às 08:00; horário já passou (não há tolerância de atraso).
+23:50:07 chegada     [09:00] Nuno 9: consulta agendada com Dr. Silva às 15:00. Aguarde ser chamado.
+23:50:07 recusa      [09:00] Ana 10: não há mais atendimentos no turno da manhã.
+23:50:07 info        [10:00] Plantonista está disponível.
+23:50:07 atendimento [10:00] Plantonista chamou Nuno 2 (prioritário; chegou às 09:00). Prioritários restantes no bloco: 2.
+23:50:09 info        [10:00] Dr. Silva está disponível.
+23:50:09 atendimento [10:00] Dr. Silva chamou Nuno 9 (consulta das 15:00).
+23:50:11 info        [10:00] Plantonista está disponível.
+23:50:11 atendimento [10:00] Plantonista chamou Nuno 5 (prioritário; chegou às 09:00). Prioritários restantes no bloco: 1.
+23:50:12 info        [10:00] Dr. Silva está disponível.
+23:50:12 atendimento [10:00] Dr. Silva chamou Olga 6 (consulta das 17:00).
+23:50:14 info        [11:00] Plantonista está disponível.
+23:50:14 atendimento [11:00] Plantonista chamou Bruno 4 (comum; chegou às 09:00). Prioritários restantes no bloco: 3.
